@@ -64,11 +64,17 @@ img {
     vertical-align: sub;
 }
 
-#myContact div {
+#myContact .line-1,
+#myContact .line-2,
+#myContact .line-3 {
     width: 45px;
     height: 1px;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.575);
+}
+
+#myContact.show~.hvr-ripple-out::before {
+    animation: none !important;
 }
 
 @-webkit-keyframes hvr-ripple-out {
@@ -115,4 +121,8 @@ img {
 .hvr-ripple-out:hover:before {
     -webkit-animation-name: hvr-ripple-out;
     animation-name: hvr-ripple-out;
+}
+
+#myContact .phone:hover .line-1 {
+    display: none;
 }
