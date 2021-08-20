@@ -123,6 +123,16 @@ img {
     animation-name: hvr-ripple-out;
 }
 
-#myContact .phone:hover .line-1 {
+#myContact .phone:hover~.line-1 {
+    display: none;
+}
+
+#myContact .zalo:hover~.line-1,
+#myContact .zalo:hover~.line-2 {
+    display: none;
+}
+
+#myContact .messenger:hover~.line-2,
+#myContact .messenger:hover~.line-3 {
     display: none;
 }
