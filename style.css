@@ -19,8 +19,9 @@ body {
 }
 
 img {
-    vertical-align: baseline;
-    width: 40px;
+    vertical-align: middle;
+    width: 45px;
+    height: 45px;
 }
 
 #myContact {
@@ -30,8 +31,8 @@ img {
 }
 
 .icon-bar {
-    width: 70px;
-    border-radius: 22px;
+    width: 75px;
+    border-radius: 25px;
     background-color: #a51e24;
     display: inline-table;
 }
@@ -43,19 +44,31 @@ img {
     padding: 16px;
     color: white;
     font-size: 27px;
-    border-radius: 22px;
+    border-radius: 25px;
     background-color: #a51e24;
     border: 2px solid #a51e24;
 }
 
 .icon-bar a:hover {
-    border-radius: 22px;
+    border-radius: 25px;
     background-color: #a51e24;
     border: 2px solid #fff;
 }
 
 #myContact.show {
-    height: 228px;
+    height: 252px;
+}
+
+.contact-btn img {
+    width: 45px;
+    vertical-align: sub;
+}
+
+#myContact div {
+    width: 45px;
+    height: 1px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.575);
 }
 
 @-webkit-keyframes hvr-ripple-out {
@@ -88,7 +101,7 @@ img {
 .hvr-ripple-out:before {
     content: '';
     position: absolute;
-    border-radius: 22px;
+    border-radius: 25px;
     border: 16px solid #fff;
     top: 0;
     right: 0;
